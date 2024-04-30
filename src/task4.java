@@ -3,7 +3,7 @@ import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.util.Scanner;
 
-public class task2 {
+public class task4 {
     public static void main(String[] args) {
         System.out.print("Введите имя файла -> ");
         Scanner scanner = new Scanner(System.in);
