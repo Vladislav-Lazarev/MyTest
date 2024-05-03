@@ -1,13 +1,10 @@
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.ObjectInputStream;
-import java.util.Scanner;
 
 public class task4 {
     public static void main(String[] args) {
-        System.out.print("Введите имя файла -> ");
-        Scanner scanner = new Scanner(System.in);
-        String fileName = scanner.nextLine();
+        String fileName = args[0];
 
         try {
             FileInputStream fis = new FileInputStream(fileName);
@@ -43,10 +40,10 @@ public class task4 {
                     }
                 }
             }
-            System.out.printf("Минимальное колличество шагов - %d\n", count);
+            System.out.println(count);
         }
         catch(IOException e) {
-            System.out.println("IOException\n Файл не найден.");}
+            System.out.println("IOException");}
         catch(ClassNotFoundException e) {
             System.out.println("ClassNotFoundException");}
     }
